@@ -1,8 +1,10 @@
 FROM debian:wheezy
 MAINTAINER "Murphy McMahon"
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y wget openssl ca-certificates \
+    && apt-get install -y wget openssl ca-certificates \
     && cd /tmp \
     && wget -O jdk8.tar.gz \
        --header "Cookie: oraclelicense=accept-securebackup-cookie" \
