@@ -15,3 +15,4 @@ RUN apt-get update \
     && update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_05/bin/java 100 \
     && update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_05/bin/javac 100
 
+ENV JAVA_HOME /opt/jdk/jdk1.8.0_05
