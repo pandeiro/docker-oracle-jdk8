@@ -1,5 +1,5 @@
 FROM debian:wheezy
-MAINTAINER "Murphy McMahon"
+MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
