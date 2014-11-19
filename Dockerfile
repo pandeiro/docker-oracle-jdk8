@@ -8,7 +8,7 @@ RUN apt-get update \
     && cd /tmp \
     && wget -qO jdk8.tar.gz \
        --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-       http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz \
+       http://download.oracle.com/otn-pub/java/jdk/8u25-b17/jdk-8u25-linux-x64.tar.gz \
     && tar xzf jdk8.tar.gz -C /opt \
     && mv /opt/jdk* /opt/java \
     && rm /tmp/jdk8.tar.gz \
