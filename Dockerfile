@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update \
     && apt-get install -y wget openssl ca-certificates \
     && cd /tmp \
-    && wget -O jdk8.tar.gz \
+    && wget -qO jdk8.tar.gz \
        --header "Cookie: oraclelicense=accept-securebackup-cookie" \
        http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz \
     && tar xzf jdk8.tar.gz -C /opt \
